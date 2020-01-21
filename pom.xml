@@ -24,8 +24,30 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+										    <cloudHubDeployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <muleVersion>${app.runtime}</muleVersion>
+      <username>mohit15kmr</username>
+      <password>Mohit@123</password>
+      <applicationName>maven-project21</applicationName>
+      <environment>Sandbox</environment>
+	<workerType>Micro</workerType>
+						    <workers>1</workers>
+      <properties>
+        <key>value</key>
+      </properties>
+    </cloudHubDeployment>
                     <copyToAppsDirectory>true</copyToAppsDirectory>
 				</configuration>
+								<executions>
+          <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </execution>
+        </executions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
