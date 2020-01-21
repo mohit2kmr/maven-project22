@@ -29,7 +29,7 @@
       <muleVersion>${app.runtime}</muleVersion>
       <username>mohit15kmr</username>
       <password>Mohit@123</password>
-      <applicationName>maven-project21</applicationName>
+      <applicationName>maven-project22</applicationName>
       <environment>Sandbox</environment>
 	<workerType>Micro</workerType>
 						    <workers>1</workers>
